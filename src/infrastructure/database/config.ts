@@ -4,16 +4,15 @@ const commonConfig = {
   migrationStorageTableName: 'sequelize_meta',
   seederStorageTableName: 'sequelize_data',
   dialect: 'sqlite',
+  storage: './database.sqlite3',
 };
 
 module.exports = {
   local: {
     ...commonConfig,
-    storage: './database.sqlite3',
   },
   development: {
     ...commonConfig,
-    storage: './database.sqlite3',
   },
   test: {
     ...commonConfig,
